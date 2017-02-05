@@ -53,8 +53,8 @@
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
       <AdditionalLibraryDirectories>$(OGL_SDK_DIR)lib\$(Platform)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       
-      <AdditionalDependencies Condition="'$(Configuration)'=='Debug'">OpenGL32.lib;glfw3.lib;FreeImage.lib;freetype271d.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalDependencies Condition="'$(Configuration)'=='Release'">OpenGL32.lib;glfw3.lib;FreeImage.lib;freetype271.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies Condition="'$(Configuration)'=='Debug'">OpenGL32.lib;glew32.lib;glfw3.lib;FreeImage.lib;freetype271d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies Condition="'$(Configuration)'=='Release'">OpenGL32.lib;glew32.lib;glfw3.lib;FreeImage.lib;freetype271.lib;%(AdditionalDependencies)</AdditionalDependencies>
 
       <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
     </Link>
