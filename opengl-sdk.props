@@ -39,8 +39,8 @@
     <IntDir>$(SolutionDir)$(build_temp_dir)$(ProjectName)\</IntDir>
     <TargetName>$(ProjectName)$(configuration_tag)$(platform_tag)</TargetName>
     <ExecutablePath>$(OGL_SDK_DIR)bin\$(Platform)\;$(ExecutablePath)</ExecutablePath>
-    <IncludePath>$(OGL_SDK_DIR)include\;$(IncludePath)</IncludePath>
-    <LibraryPath>$(OGL_SDK_DIR)lib\$(Platform)\;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(OGL_SDK_DIR)include\;$(SolutionDir);$(IncludePath)</IncludePath>
+    <LibraryPath>$(OGL_SDK_DIR)lib\$(Platform)\;$(OutDir);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
 
   <ItemDefinitionGroup>
